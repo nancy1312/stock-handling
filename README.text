@@ -45,3 +45,5 @@ INSERT INTO public.product_sales(
 	product_id, items_sold, timestamp)
 	VALUES ('A200-0028', 28, '2018-07-17 22:54:01.754');
 
+
+Race condition can be handled by creating a variable "Version" in Entity file and Annotating with @Version.
