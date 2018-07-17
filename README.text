@@ -1,1 +1,47 @@
-# stock-handling
+Stock Handling 
+
+Requirement:
+1. Java 1.8
+2. STS
+3. PostgreSql
+4. Postman
+5. Apache Maven
+
+Deployment steps:
+1. Clone the project from GIT
+2. Run mvn clean install from command prompt. After the build jar will be created in target folder
+3. launch the application by java -jar abc-snapshot.jar command.
+4. All the Get and post funtionalities can be tested from postman.
+
+General Overview:
+1. The application has two tables: Product and Product_stock
+2. Product table can be populated with POST request
+3. Use the below insert statements to populate Product_Stock table.
+
+
+Insert Scripts:
+
+INSERT INTO public.product_sales(
+	product_id, items_sold, timestamp)
+	VALUES ('A200-0023', 23, '2018-07-17 22:54:01.754');
+  
+INSERT INTO public.product_sales(
+	product_id, items_sold, timestamp)
+	VALUES ('A200-0024', 24, '2018-07-17 22:54:01.754');
+  
+INSERT INTO public.product_sales(
+	product_id, items_sold, timestamp)
+	VALUES ('A200-0025', 25, '2018-07-17 22:54:01.754');
+  
+INSERT INTO public.product_sales(
+	product_id, items_sold, timestamp)
+	VALUES ('A200-00226', 26, '2018-07-17 22:54:01.754');
+  
+INSERT INTO public.product_sales(
+	product_id, items_sold, timestamp)
+	VALUES ('A200-0027', 27, '2018-07-17 22:54:01.754');
+  
+INSERT INTO public.product_sales(
+	product_id, items_sold, timestamp)
+	VALUES ('A200-0028', 28, '2018-07-17 22:54:01.754');
+
